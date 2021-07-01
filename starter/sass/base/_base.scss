@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* BEST PRACTISE IS TO SET ROOT TO %. SO take 10px(which we use here)
+ and devide by 16px(common root size)
+the result will be in %, which is 62.5%. Use it!!!
+For the rest, use REM, and it is easy to calculate.
+The formula is Xpx(10px because we use it as a root, 
+only it is declared in % in the root) devide by Xpx(from any other property) 
+will be equal to amount in REM; 
+
+*/
+
+html {
+  //this defines what one rem is
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
