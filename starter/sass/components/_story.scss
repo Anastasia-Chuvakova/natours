@@ -31,8 +31,8 @@
     position: relative;
 
     @include respond(tab-land) {
-      width: 11rem;
-      height: 11rem;
+      width: 15rem;
+      height: 15rem;
     }
     @include respond(phone) {
       transform: translateX(-3rem) skewX(0);
